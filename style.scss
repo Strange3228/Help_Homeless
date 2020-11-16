@@ -23,9 +23,12 @@ body {
   justify-content: center;
   align-items: center;
   background: rgba(243, 243, 243, 0.781);
-  animation: arrowDownJump 0.8s ease alternate infinite;
+  animation: arrowDownJump 1.3s ease alternate infinite;
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 100;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+  pointer-events: none;
   i {
     font-size: 40px;
   }
@@ -42,14 +45,22 @@ body {
   justify-content: center;
   align-items: center;
   background: rgba(243, 243, 243, 0.781);
-  animation: arrowDownJump 0.8s ease alternate infinite;
+  animation: arrowUpJump 1.3s ease alternate infinite;
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 100;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+  pointer-events: none;
   i {
     font-size: 40px;
   }
+}
+.nav-btn-active {
+  opacity: 1 !important;
+  pointer-events: all !important;
 }
 @import "./styles/preloader";
 @import "./styles/nav";
 @import "./styles/top-poster";
 @import "./styles/people-inf";
+@import "./styles/stats";
