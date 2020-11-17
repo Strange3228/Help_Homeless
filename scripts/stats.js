@@ -133,7 +133,7 @@ $(document).ready(function(){
         if(sectionCounter == 3){
             statsDivsTotal.each(function(){
                 heightOfDiv = dataTotal[YearCounter][counterStatsDivTotal] / (600000/100)
-                $(this).css("height",`${heightOfDiv*(300/100)}px`)
+                $(this).css("height",`${heightOfDiv*($(".total-number").height()/100)}px`)
                 $(this).addClass("count-on-the-top-of-div").attr('data-content',`${dataTotal[YearCounter][counterStatsDivTotal]}`)
                 counterStatsDivTotal = counterStatsDivTotal + 1
             })
@@ -141,14 +141,14 @@ $(document).ready(function(){
         
             statsDivsGender.each(function(){
                 if(dataGender[counterStatsDivTotal] < 5000){
-                    $(this).css("width","35px")
-                    $(this).css("height","35px")
+                    $(this).css("width","30px")
+                    $(this).css("height","30px")
                     $(this).css("border-radius","50%")
                     $(this).addClass("count-on-the-right-of-div").attr('data-content',`${dataGender[counterStatsDivTotal]}`)
                     counterStatsDivTotal = counterStatsDivTotal + 1
                 } else {
                     heightOfDiv = dataGender[counterStatsDivTotal] / (350000/100)
-                    $(this).css("width",`${heightOfDiv*(500/100)}px`)
+                    $(this).css("width",`${heightOfDiv*($(".count-by-gender").width()/100)}px`)
                     $(this).addClass("count-on-the-right-of-div").attr('data-content',`${dataGender[counterStatsDivTotal]}`)
                     counterStatsDivTotal = counterStatsDivTotal + 1
                 }
@@ -186,7 +186,7 @@ $(document).ready(function(){
         YearCounter = YearCounter + 1
         statsDivsTotal.each(function(){
             heightOfDiv = dataTotal[YearCounter][counterStatsDivTotal] / (600000/100)
-            $(this).css("height",`${heightOfDiv*(300/100)}px`)
+            $(this).css("height",`${heightOfDiv*($(".total-number").height()/100)}px`)
             $(this).addClass("count-on-the-top-of-div").attr('data-content',`${dataTotal[YearCounter][counterStatsDivTotal]}`)
             counterStatsDivTotal = counterStatsDivTotal + 1
         })
@@ -198,7 +198,7 @@ $(document).ready(function(){
         YearCounter = YearCounter - 1
         statsDivsTotal.each(function(){
             heightOfDiv = dataTotal[YearCounter][counterStatsDivTotal] / (600000/100)
-            $(this).css("height",`${heightOfDiv*(300/100)}px`)
+            $(this).css("height",`${heightOfDiv*($(".total-number").height()/100)}px`)
             $(this).addClass("count-on-the-top-of-div").attr('data-content',`${dataTotal[YearCounter][counterStatsDivTotal]}`)
             counterStatsDivTotal = counterStatsDivTotal + 1
         })
