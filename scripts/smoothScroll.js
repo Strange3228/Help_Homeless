@@ -17,6 +17,11 @@ $(document).ready(function (){
         if(counter == 1){
             prevSectionBtn.addClass("nav-btn-active")
         }
+        if(counter == 3){
+            $(".first-alert").css("opacity","1")
+            $(".second-alert").css("opacity","1")
+            $(".third-alert").css("opacity","1")
+        }
     });
     prevSectionBtn.click(function (){
         counter = counter - 1
