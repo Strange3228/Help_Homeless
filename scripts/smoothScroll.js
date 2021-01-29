@@ -23,6 +23,16 @@ $(document).ready(function (){
             $(".third-alert").css("opacity","1")
         }
     });
+
+    $(".poster-report-btn").click(function (){
+        $('html, body').animate({
+            scrollTop: sections[sections.length-1].offsetTop
+        }, 1300);
+        counter = sections.length-1
+        nextSectionBtn.removeClass("nav-btn-active")
+        prevSectionBtn.addClass("nav-btn-active")
+    })
+
     prevSectionBtn.click(function (){
         counter = counter - 1
         if(counter == 0){

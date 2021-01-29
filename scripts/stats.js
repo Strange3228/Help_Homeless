@@ -127,6 +127,11 @@ $(document).ready(function(){
 
     yearIndicator.text(Years[YearCounter])
     
+    $("#tipo-send").on("click", function(){
+        $("#tipo-send").html('Thank you!')
+        $("#city").html('')
+        alert('Wiadomość wyslana')
+    })
     /********ON_PAGE_LOAD**********/
     nextSectionBtn.on("click",function(){
         sectionCounter = sectionCounter + 1

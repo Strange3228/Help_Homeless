@@ -71,6 +71,7 @@
             <h1><span>THEY</span> need <span>HELP</span>.</h1>
             <h1><span>WE</span> can <span>HELP THEM</span>!</h1>
         </div>
+        <button class="poster-report-btn">Report Homeless that need help</button>
     </div>
     <!---->
 
@@ -191,7 +192,7 @@
     </div>
     <!---->
 
-    <!--AUTHORS-->
+    <!--AUTHORS
     <div class="section authors">
         <h1 class="title">Authors:</h1>
         <h1 class="the-end">Thank YOU!</h1>
@@ -233,7 +234,23 @@
             </div>
         </div>
     </div>
-    <!---->
+    -->
+
+    <div class="section report">
+        <h1 class="title">Send a report and we will help</h1>
+        <form action="submit" class="report__form">
+            <div class="formgroup" id="city-form">
+                <input type="text" id="city" name="city" placeholder="City"/>
+            </div>
+            <div class="formgroup" id="adress-form">
+                <input type="text" id="adress" name="adress" placeholder="Adress"/>
+            </div>
+            <div class="formgroup" id="adress-form">
+                <input type="text" id="adress" name="adress" placeholder="How many persons"/>
+            </div>
+            <button type="button" type="submit" id="tipo-send">Send!</button>
+        </form>
+    </div>
 
     <script src="./scripts/jquery-3.5.1.min.js"></script>
     <script src="./scripts/owl/owl.carousel.min.js"></script>
